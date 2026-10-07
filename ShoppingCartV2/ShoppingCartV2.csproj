@@ -344,8 +344,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\ShoppingCartDB.mdf" />
-    <Content Include="App_Data\ShoppingCartDB_log.ldf">
+    <Content Include="App_Data\ShoppingCartDB.mdf" Condition="Exists('App_Data\ShoppingCartDB.mdf')" />
+    <Content Include="App_Data\ShoppingCartDB_log.ldf" Condition="Exists('App_Data\ShoppingCartDB_log.ldf')">
       <DependentUpon>ShoppingCartDB.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
