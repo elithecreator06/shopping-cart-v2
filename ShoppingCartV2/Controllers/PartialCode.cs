@@ -156,7 +156,7 @@ namespace ShoppingCartV2.Controllers
                                 pathlabel += ":<br />";
                         }
                         if (!String.IsNullOrWhiteSpace(p.ImageFile))
-                            pathlabel += "<img src=\"/Game Images/" + p.ImageFile.Trim() + "\" width=\"250\" alt=\"Store Product Image\" />";
+                            pathlabel += "<img src=\"/Images/" + p.ImageFile.Trim() + "\" width=\"250\" alt=\"Store Product Image\" />";
                     }
                     Session[pType + "Path" + index] = pathlabel;
                     Session[pType + "UnitPrice" + index] = p.UnitPrice;
