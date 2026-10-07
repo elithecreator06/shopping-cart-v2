@@ -1,0 +1,22 @@
+# Visual Studio workspace and per-user settings
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# NuGet packages are restored from packages.config
+packages/
+
+# Local SQL Server database files and logs
+App_Data/
+*.mdf
+*.ldf
+
+# This folder is an embedded duplicate of the project source; the solution uses the parent project.
+/ShoppingCartV2/ShoppingCartV2/
+
+# Logs
+*.log
