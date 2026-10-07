@@ -80,6 +80,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -194,6 +195,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AzureSqlBootstrapper.cs" />
+    <Compile Include="App_Start\AzureSqlConnectionStrings.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -344,6 +347,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AzureSqlBootstrap.sql" />
     <Content Include="App_Data\ShoppingCartDB.mdf" Condition="Exists('App_Data\ShoppingCartDB.mdf')" />
     <Content Include="App_Data\ShoppingCartDB_log.ldf" Condition="Exists('App_Data\ShoppingCartDB_log.ldf')">
       <DependentUpon>ShoppingCartDB.mdf</DependentUpon>

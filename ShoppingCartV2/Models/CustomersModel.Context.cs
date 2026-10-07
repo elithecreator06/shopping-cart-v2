@@ -16,7 +16,7 @@ namespace ShoppingCartV2.Models
     public partial class ShoppingCartDBEntities : DbContext
     {
         public ShoppingCartDBEntities()
-            : base("name=ShoppingCartDBEntities")
+            : base(AzureSqlConnectionStrings.For("ShoppingCartDBEntities", "CustomersModel"))
         {
         }
     
